@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Color Picker Game</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .color-box {
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Color Picker Game</h1>
+    <div id="color-display" class="color-box"></div>
+    <p id="instructions">Select the color that matches the displayed color.</p>
+
+    <div id="color-options">
+      <div class="color-box"></div>
+      <div class="color-box"></div>
+      <div class="color-box"></div>
+    </div>
+    <p id="score">Score: <span id="score-value">0</span></p>
+    <button id="reset-button">Reset Score</button>
+    <script src="script.js"></script>
+  </body>
+</html>
